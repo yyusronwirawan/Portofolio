@@ -1,0 +1,8 @@
+{
+  "typescript.format.semicolons": "insert",
+  "typescript.preferences.quoteStyle": "single",
+  "prettier.quoteProps": "as-needed",
+  "prettier.singleQuote": true,
+  "javascript.preferences.quoteStyle": "single",
+  "prettier.jsxSingleQuote": true
+}
