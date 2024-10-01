@@ -1,5 +1,5 @@
 import { Project } from '../types';
-import { getStack } from './stack';
+import { getStack, defaultStack } from './stack'; // Pastikan ada defaultStack
 
 export const MY_PROJECTS: Project[] = [
   {
@@ -18,13 +18,13 @@ export const MY_PROJECTS: Project[] = [
       '/images/gtmetrix.webp',
     ],
     stacks: [
-      getStack('Next.js'),
-      getStack('TypeScript'),
-      getStack('Shadcn UI'),
-      getStack('TailwindCSS'),
-      getStack('Prisma'),
-      getStack('PostgreSQL'),
-      getStack('Firebase'),
+      getStack('Next.js') || defaultStack,
+      getStack('TypeScript') || defaultStack,
+      getStack('Shadcn UI') || defaultStack,
+      getStack('TailwindCSS') || defaultStack,
+      getStack('Prisma') || defaultStack,
+      getStack('PostgreSQL') || defaultStack,
+      getStack('Firebase') || defaultStack,
     ],
   },
   {
@@ -39,11 +39,11 @@ export const MY_PROJECTS: Project[] = [
       '/images/skpi-3.webp',
     ],
     stacks: [
-      getStack('React.js'),
-      getStack('TypeScript'),
-      getStack('Chakra UI'),
-      getStack('Express.js'),
-      getStack('MySQL'),
+      getStack('React.js') || defaultStack,
+      getStack('TypeScript') || defaultStack,
+      getStack('Chakra UI') || defaultStack,
+      getStack('Express.js') || defaultStack,
+      getStack('MySQL') || defaultStack,
     ],
   },
   {
@@ -55,12 +55,12 @@ export const MY_PROJECTS: Project[] = [
     thumbnailUrl: '/images/rumah-bahasa.webp',
     imageUrls: ['/images/rumah-bahasa.webp'],
     stacks: [
-      getStack('Next.js'),
-      getStack('TypeScript'),
-      getStack('Shadcn UI'),
-      getStack('TailwindCSS'),
-      getStack('Prisma'),
-      getStack('PostgreSQL'),
+      getStack('Next.js') || defaultStack,
+      getStack('TypeScript') || defaultStack,
+      getStack('Shadcn UI') || defaultStack,
+      getStack('TailwindCSS') || defaultStack,
+      getStack('Prisma') || defaultStack,
+      getStack('PostgreSQL') || defaultStack,
     ],
   },
   {
@@ -78,11 +78,11 @@ export const MY_PROJECTS: Project[] = [
       '/images/listkol-4.webp',
     ],
     stacks: [
-      getStack('React.js'),
-      getStack('TypeScript'),
-      getStack('Shadcn UI'),
-      getStack('TailwindCSS'),
-      getStack('Vite'),
+      getStack('React.js') || defaultStack,
+      getStack('TypeScript') || defaultStack,
+      getStack('Shadcn UI') || defaultStack,
+      getStack('TailwindCSS') || defaultStack,
+      getStack('Vite') || defaultStack,
     ],
   },
   {
@@ -94,9 +94,9 @@ export const MY_PROJECTS: Project[] = [
     thumbnailUrl: '/images/campus-life.webp',
     imageUrls: ['/images/campus-life.webp'],
     stacks: [
-      getStack('Dart'),
-      getStack('Flutter'),
-      getStack('Firebase'),
+      getStack('Dart') || defaultStack,
+      getStack('Flutter') || defaultStack,
+      getStack('Firebase') || defaultStack,
     ],
   },
   {
@@ -108,9 +108,9 @@ export const MY_PROJECTS: Project[] = [
     thumbnailUrl: '/images/no-trash.webp',
     imageUrls: ['/images/no-trash.webp'],
     stacks: [
-      getStack('Dart'),
-      getStack('Flutter'),
-      getStack('Firebase'),
+      getStack('Dart') || defaultStack,
+      getStack('Flutter') || defaultStack,
+      getStack('Firebase') || defaultStack,
     ],
   },
   {
@@ -127,14 +127,14 @@ export const MY_PROJECTS: Project[] = [
       '/images/himatekkom-4.webp',
     ],
     stacks: [
-      getStack('React.js'),
-      getStack('TailwindCSS'),
+      getStack('React.js') || defaultStack,
+      getStack('TailwindCSS') || defaultStack,
     ],
   },
   {
     cname: 'seulanga',
     title: 'Seulanga Community',
-    description: 'Static landing page for a student community that applies Project Based Learning (PBL) to create individuals who are able to answer public challenges',
+    description: 'Static landing page for a student community that applies Project Based Learning (PBL) to create individuals who are able to answer public challenges.',
     isFeatured: false,
     sourceCodeUrl: 'https://github.com/nuzulh/seulanga-web',
     demoUrl: 'https://seulanga-web.netlify.app',
@@ -145,8 +145,8 @@ export const MY_PROJECTS: Project[] = [
       '/images/seulanga-3.webp',
     ],
     stacks: [
-      getStack('React.js'),
-      getStack('TailwindCSS'),
+      getStack('React.js') || defaultStack,
+      getStack('TailwindCSS') || defaultStack,
     ],
   },
 ];
