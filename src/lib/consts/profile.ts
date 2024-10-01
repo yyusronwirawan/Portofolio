@@ -7,7 +7,7 @@ export const MY_PROFILE: Profile = {
   nickName: 'Yusron.',
   avatar: 'https://github.com/yyusronwirawan.png',
   address: 'Ponorogo, East Java, Indonesia 🇮🇩',
-  status1: 'Full Stack Developer',
+  status1: 'Software Engineer | IT Security',
   status2: 'Open for freelance project',
   description: 'Experienced Software Engineer with over 4 years of hands-on expertise designing and implementing innovative web & mobile applications especially in frontend side. Strong problem-solving skills and a commitment to staying current with emerging trends in web development.',
   socials: [
